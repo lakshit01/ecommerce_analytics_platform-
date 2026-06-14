@@ -1,0 +1,30 @@
+version: 2
+
+models:
+
+  - name: dim_customer
+    description: Dimension table containing customer information.
+
+    columns:
+      - name: customer_sk
+        description: Surrogate key for the customer dimension
+        tests:
+          - unique
+          - not_null
+        relationships:
+          - to: ref('stg_customers')
+            field: customer_id
+
+
+  - name: dim_product
+    description: Dimension table containing product information.
+
+    columns:
+      - name: product_sk
+        description: Surrogate key for the product dimension
+        tests:
+          - unique
+          - not_null
+        relationships:
+          - to: ref('stg_products')
+            field: product_id
