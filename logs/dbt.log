@@ -8059,3 +8059,355 @@ group by product_id
 [0m03:40:57.171072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E629986B70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6298C23F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E646DF7D70>]}
 [0m03:40:57.171357 [debug] [MainThread]: Flushing usage events
 [0m03:40:58.887359 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m05:00:24.022389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58DD92270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58AAE7110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58EA525D0>]}
+
+
+============================== 05:00:24.029103 | f27a1aa4-569d-48eb-a58e-e05fc0436100 ==============================
+[0m05:00:24.029103 [info ] [MainThread]: Running with dbt=1.11.11
+[0m05:00:24.030037 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\shiva\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt snapshot', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Projects\\DE\\Projects\\ecommerce_analytics_platform\\logs'}
+[0m05:00:27.974157 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m05:00:27.974998 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m05:00:27.975255 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m05:00:31.208843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f27a1aa4-569d-48eb-a58e-e05fc0436100', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58E484E90>]}
+[0m05:00:31.262815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f27a1aa4-569d-48eb-a58e-e05fc0436100', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5AAA26E00>]}
+[0m05:00:31.263328 [info ] [MainThread]: Registered adapter: databricks=1.12.1
+[0m05:00:32.013029 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m05:00:32.194988 [warn ] [MainThread]: [[33mWARNING[0m][CustomKeyInObjectDeprecation]: Deprecated functionality
+Custom key `relationships` found at `models[0].columns[0]` in file
+`dbt/ecommerce_dbt/models\marts\dimentions\schema.yml`. This may mean the key is
+a typo, or is simply not a key supported by the object.
+[0m05:00:32.195655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f27a1aa4-569d-48eb-a58e-e05fc0436100', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5AAC1D650>]}
+[0m05:00:32.216860 [warn ] [MainThread]: [[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `freshness` as a top-level property of `sources[0].tables[2]` in file
+`dbt/ecommerce_dbt/models\staging\sources.yml`. The `freshness` top-level
+property should be moved into the `config` of `sources[0].tables[2]`.
+[0m05:00:32.217476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f27a1aa4-569d-48eb-a58e-e05fc0436100', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5AC3934D0>]}
+[0m05:00:34.314037 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m05:00:34.314973 [debug] [MainThread]: Partial parsing: added file: ecommerce_dbt://dbt/ecommerce_dbt/snapshots\customer_snapshot.sql
+[0m05:00:34.315573 [debug] [MainThread]: Partial parsing: updated file: ecommerce_dbt://dbt/ecommerce_dbt/models\marts\facts\fact_sales.sql
+[0m05:00:35.082486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f27a1aa4-569d-48eb-a58e-e05fc0436100', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5AABFDEF0>]}
+[0m05:00:35.181661 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\DE\Projects\ecommerce_analytics_platform\target\manifest.json
+[0m05:00:35.189344 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\DE\Projects\ecommerce_analytics_platform\target\semantic_manifest.json
+[0m05:00:35.213893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f27a1aa4-569d-48eb-a58e-e05fc0436100', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5AC56DE60>]}
+[0m05:00:35.214418 [info ] [MainThread]: Found 12 models, 38 data tests, 1 snapshot, 4 sources, 875 macros
+[0m05:00:35.214979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f27a1aa4-569d-48eb-a58e-e05fc0436100', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5AC671490>]}
+[0m05:00:35.217229 [info ] [MainThread]: 
+[0m05:00:35.217589 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m05:00:35.218088 [info ] [MainThread]: 
+[0m05:00:35.218722 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m05:00:35.218956 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m05:00:35.221338 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_ecommerce_analytics_platform) - Creating connection
+[0m05:00:35.221710 [debug] [ThreadPool]: Acquiring new databricks connection 'list_ecommerce_analytics_platform'
+[0m05:00:35.230921 [debug] [ThreadPool]: Using databricks connection "list_ecommerce_analytics_platform"
+[0m05:00:35.231244 [debug] [ThreadPool]: On list_ecommerce_analytics_platform: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "f27a1aa4-569d-48eb-a58e-e05fc0436100", "connection_name": "list_ecommerce_analytics_platform"} */
+
+    
+
+  SHOW SCHEMAS IN `ecommerce_analytics_platform`
+
+
+  
+[0m05:00:35.231615 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:00:44.259189 [info ] [ThreadPool]: Databricks adapter: SPOG discovery probe to 'https://https://dbc-b03c4854-4652.cloud.databricks.com/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //dbc-b03c4854-4652.cloud.databricks.com/.well-known/databricks-config (Caused by NameResolutionError("HTTPSConnection(host='https', port=443): Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))). Proceeding as a non-SPOG host. If https://dbc-b03c4854-4652.cloud.databricks.com is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m05:00:48.875281 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-122d-1d54-bf31-59fcc7c11cce) - Created
+[0m05:01:00.870751 [debug] [ThreadPool]: SQL status: OK in 25.640 seconds
+[0m05:01:00.913549 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16849-122d-1d54-bf31-59fcc7c11cce, command-id=01f16849-1342-1973-99c9-c9e6713de139) - Closing
+[0m05:01:01.318556 [debug] [ThreadPool]: On list_ecommerce_analytics_platform: Close
+[0m05:01:01.322465 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-122d-1d54-bf31-59fcc7c11cce) - Closing
+[0m05:01:01.776667 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=create_ecommerce_analytics_platform_snapshots) - Creating connection
+[0m05:01:01.778452 [debug] [ThreadPool]: Acquiring new databricks connection 'create_ecommerce_analytics_platform_snapshots'
+[0m05:01:01.785367 [debug] [ThreadPool]: Creating schema "database: "ecommerce_analytics_platform"
+schema: "snapshots"
+"
+[0m05:01:01.811605 [debug] [ThreadPool]: Using databricks connection "create_ecommerce_analytics_platform_snapshots"
+[0m05:01:01.812856 [debug] [ThreadPool]: On create_ecommerce_analytics_platform_snapshots: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "f27a1aa4-569d-48eb-a58e-e05fc0436100", "connection_name": "create_ecommerce_analytics_platform_snapshots"} */
+create schema if not exists `ecommerce_analytics_platform`.`snapshots`
+  
+[0m05:01:01.814018 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:01:03.369268 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-1ba9-16e6-ab1c-e0d92dcb37da) - Created
+[0m05:01:04.818381 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m05:01:04.821438 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16849-1ba9-16e6-ab1c-e0d92dcb37da, command-id=01f16849-1be5-144c-a948-373fedabe026) - Closing
+[0m05:01:04.822394 [debug] [ThreadPool]: On create_ecommerce_analytics_platform_snapshots: Close
+[0m05:01:04.823111 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-1ba9-16e6-ab1c-e0d92dcb37da) - Closing
+[0m05:01:05.183589 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_ecommerce_analytics_platform_dev_intermediate) - Creating connection
+[0m05:01:05.187021 [debug] [ThreadPool]: Acquiring new databricks connection 'list_ecommerce_analytics_platform_dev_intermediate'
+[0m05:01:05.199358 [debug] [ThreadPool]: Using databricks connection "list_ecommerce_analytics_platform_dev_intermediate"
+[0m05:01:05.200206 [debug] [ThreadPool]: On list_ecommerce_analytics_platform_dev_intermediate: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "f27a1aa4-569d-48eb-a58e-e05fc0436100", "connection_name": "list_ecommerce_analytics_platform_dev_intermediate"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'ecommerce_analytics_platform'
+  AND table_schema = 'dev_intermediate'
+
+  
+[0m05:01:05.200906 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:01:06.819747 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-1db7-1b7e-af4c-b78d8758509d) - Created
+[0m05:01:10.863114 [debug] [ThreadPool]: SQL status: OK in 5.660 seconds
+[0m05:01:10.867861 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16849-1db7-1b7e-af4c-b78d8758509d, command-id=01f16849-1df3-1c6b-9dd7-cd7184f8e43c) - Closing
+[0m05:01:10.869507 [debug] [ThreadPool]: On list_ecommerce_analytics_platform_dev_intermediate: Close
+[0m05:01:10.870205 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-1db7-1b7e-af4c-b78d8758509d) - Closing
+[0m05:01:11.210938 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_ecommerce_analytics_platform_dev_staging) - Creating connection
+[0m05:01:11.213027 [debug] [ThreadPool]: Acquiring new databricks connection 'list_ecommerce_analytics_platform_dev_staging'
+[0m05:01:11.217115 [debug] [ThreadPool]: Using databricks connection "list_ecommerce_analytics_platform_dev_staging"
+[0m05:01:11.217983 [debug] [ThreadPool]: On list_ecommerce_analytics_platform_dev_staging: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "f27a1aa4-569d-48eb-a58e-e05fc0436100", "connection_name": "list_ecommerce_analytics_platform_dev_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'ecommerce_analytics_platform'
+  AND table_schema = 'dev_staging'
+
+  
+[0m05:01:11.218614 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:01:12.888103 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-2157-11e2-bbcf-2d8257aad7be) - Created
+[0m05:01:15.266887 [debug] [ThreadPool]: SQL status: OK in 4.050 seconds
+[0m05:01:15.271496 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16849-2157-11e2-bbcf-2d8257aad7be, command-id=01f16849-2190-16e1-91cc-a3e3dfddc5c0) - Closing
+[0m05:01:15.272914 [debug] [ThreadPool]: On list_ecommerce_analytics_platform_dev_staging: Close
+[0m05:01:15.273679 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-2157-11e2-bbcf-2d8257aad7be) - Closing
+[0m05:01:15.611339 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_ecommerce_analytics_platform_snapshots) - Creating connection
+[0m05:01:15.613616 [debug] [ThreadPool]: Acquiring new databricks connection 'list_ecommerce_analytics_platform_snapshots'
+[0m05:01:15.626822 [debug] [ThreadPool]: Using databricks connection "list_ecommerce_analytics_platform_snapshots"
+[0m05:01:15.627669 [debug] [ThreadPool]: On list_ecommerce_analytics_platform_snapshots: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "f27a1aa4-569d-48eb-a58e-e05fc0436100", "connection_name": "list_ecommerce_analytics_platform_snapshots"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'ecommerce_analytics_platform'
+  AND table_schema = 'snapshots'
+
+  
+[0m05:01:15.628280 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:01:17.182032 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-23e7-1ed9-8689-20cd591f4cde) - Created
+[0m05:01:19.874209 [debug] [ThreadPool]: SQL status: OK in 4.250 seconds
+[0m05:01:19.877894 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16849-23e7-1ed9-8689-20cd591f4cde, command-id=01f16849-2421-1491-acd5-3eb6b19d2abd) - Closing
+[0m05:01:19.878844 [debug] [ThreadPool]: On list_ecommerce_analytics_platform_snapshots: Close
+[0m05:01:19.879579 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-23e7-1ed9-8689-20cd591f4cde) - Closing
+[0m05:01:20.290883 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_ecommerce_analytics_platform_dev_analytics) - Creating connection
+[0m05:01:20.292479 [debug] [ThreadPool]: Acquiring new databricks connection 'list_ecommerce_analytics_platform_dev_analytics'
+[0m05:01:20.298748 [debug] [ThreadPool]: Using databricks connection "list_ecommerce_analytics_platform_dev_analytics"
+[0m05:01:20.299937 [debug] [ThreadPool]: On list_ecommerce_analytics_platform_dev_analytics: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "f27a1aa4-569d-48eb-a58e-e05fc0436100", "connection_name": "list_ecommerce_analytics_platform_dev_analytics"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'ecommerce_analytics_platform'
+  AND table_schema = 'dev_analytics'
+
+  
+[0m05:01:20.301041 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:01:21.911203 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-26b4-145a-9f85-c2830af5bf63) - Created
+[0m05:01:22.843954 [debug] [ThreadPool]: SQL status: OK in 2.540 seconds
+[0m05:01:22.848033 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f16849-26b4-145a-9f85-c2830af5bf63, command-id=01f16849-26f8-1983-bba2-177879a725c0) - Closing
+[0m05:01:22.849404 [debug] [ThreadPool]: On list_ecommerce_analytics_platform_dev_analytics: Close
+[0m05:01:22.851486 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f16849-26b4-145a-9f85-c2830af5bf63) - Closing
+[0m05:01:23.182614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f27a1aa4-569d-48eb-a58e-e05fc0436100', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5920DC050>]}
+[0m05:01:23.194614 [debug] [Thread-7 (]: Began running node snapshot.ecommerce_dbt.customer_snapshot
+[0m05:01:23.195824 [info ] [Thread-7 (]: 1 of 1 START snapshot snapshots.customer_snapshot .............................. [RUN]
+[0m05:01:23.197786 [debug] [Thread-7 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=snapshot.ecommerce_dbt.customer_snapshot) - Creating connection
+[0m05:01:23.198602 [debug] [Thread-7 (]: Acquiring new databricks connection 'snapshot.ecommerce_dbt.customer_snapshot'
+[0m05:01:23.199375 [debug] [Thread-7 (]: Began compiling node snapshot.ecommerce_dbt.customer_snapshot
+[0m05:01:23.246503 [debug] [Thread-7 (]: Began executing node snapshot.ecommerce_dbt.customer_snapshot
+[0m05:01:23.600289 [debug] [Thread-7 (]: Using databricks connection "snapshot.ecommerce_dbt.customer_snapshot"
+[0m05:01:23.601519 [debug] [Thread-7 (]: On snapshot.ecommerce_dbt.customer_snapshot: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "f27a1aa4-569d-48eb-a58e-e05fc0436100", "node_id": "snapshot.ecommerce_dbt.customer_snapshot"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `ecommerce_analytics_platform`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'ecommerce_analytics_platform'
+    AND table_schema = 'snapshots'
+    AND table_name = 'customer_snapshot'
+[0m05:01:23.602358 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m05:01:25.177030 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f16849-28a9-1ace-8cc4-e6cb557d59c0) - Created
+[0m05:01:26.242279 [debug] [Thread-7 (]: SQL status: OK in 2.640 seconds
+[0m05:01:26.246717 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f16849-28a9-1ace-8cc4-e6cb557d59c0, command-id=01f16849-28e5-1963-b6c9-456fe008ce44) - Closing
+[0m05:01:26.305185 [debug] [Thread-7 (]: Using databricks connection "snapshot.ecommerce_dbt.customer_snapshot"
+[0m05:01:26.306205 [debug] [Thread-7 (]: On snapshot.ecommerce_dbt.customer_snapshot: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "f27a1aa4-569d-48eb-a58e-e05fc0436100", "node_id": "snapshot.ecommerce_dbt.customer_snapshot"} */
+select * from (
+        select *,
+        md5(coalesce(cast(customer_id as string ), '')
+         || '|' || coalesce(cast(
+    current_timestamp()
+ as string ), '')
+        ) as dbt_scd_id,
+        
+    current_timestamp()
+ as dbt_updated_at,
+        
+    current_timestamp()
+ as dbt_valid_from,
+        
+  
+  coalesce(nullif(
+    current_timestamp()
+, 
+    current_timestamp()
+), null)
+  as dbt_valid_to
+
+    from (
+        select
+    *
+from `ecommerce_analytics_platform`.`dev_staging`.`stg_customers`
+    ) sbq
+
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+[0m05:01:29.297863 [debug] [Thread-7 (]: SQL status: OK in 2.990 seconds
+[0m05:01:29.306388 [debug] [Thread-7 (]: Using databricks connection "snapshot.ecommerce_dbt.customer_snapshot"
+[0m05:01:29.307419 [debug] [Thread-7 (]: On snapshot.ecommerce_dbt.customer_snapshot: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "f27a1aa4-569d-48eb-a58e-e05fc0436100", "node_id": "snapshot.ecommerce_dbt.customer_snapshot"} */
+select * from (
+        select 
+    current_timestamp()
+ as dbt_snapshot_time
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+[0m05:01:29.308501 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f16849-28a9-1ace-8cc4-e6cb557d59c0, command-id=01f16849-2991-1fa5-9c04-e63e571435bf) - Closing
+[0m05:01:29.805674 [debug] [Thread-7 (]: SQL status: OK in 0.500 seconds
+[0m05:01:29.807063 [debug] [Thread-7 (]: Writing runtime sql for node "snapshot.ecommerce_dbt.customer_snapshot"
+[0m05:01:29.812005 [debug] [Thread-7 (]: Using databricks connection "snapshot.ecommerce_dbt.customer_snapshot"
+[0m05:01:29.813689 [debug] [Thread-7 (]: On snapshot.ecommerce_dbt.customer_snapshot: /* {"app": "dbt", "dbt_version": "1.11.11", "dbt_databricks_version": "1.12.1", "databricks_sql_connector_version": "4.2.6", "profile_name": "ecommerce_dbt", "target_name": "dev", "invocation_id": "f27a1aa4-569d-48eb-a58e-e05fc0436100", "node_id": "snapshot.ecommerce_dbt.customer_snapshot"} */
+
+      
+  
+    
+        create or replace table `ecommerce_analytics_platform`.`snapshots`.`customer_snapshot`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      select *,
+        md5(coalesce(cast(customer_id as string ), '')
+         || '|' || coalesce(cast(
+    current_timestamp()
+ as string ), '')
+        ) as dbt_scd_id,
+        
+    current_timestamp()
+ as dbt_updated_at,
+        
+    current_timestamp()
+ as dbt_valid_from,
+        
+  
+  coalesce(nullif(
+    current_timestamp()
+, 
+    current_timestamp()
+), null)
+  as dbt_valid_to
+
+    from (
+        select
+    *
+from `ecommerce_analytics_platform`.`dev_staging`.`stg_customers`
+    ) sbq
+
+
+  
+  
+[0m05:01:29.816387 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f16849-28a9-1ace-8cc4-e6cb557d59c0, command-id=01f16849-2b5b-1f3e-9f7e-b8db67fa2f0d) - Closing
+[0m05:01:42.313219 [debug] [Thread-7 (]: SQL status: OK in 12.500 seconds
+[0m05:01:42.315467 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f16849-28a9-1ace-8cc4-e6cb557d59c0, command-id=01f16849-2ba8-1282-a5a7-b4bbec85c7fb) - Closing
+[0m05:01:42.795489 [debug] [Thread-7 (]: On snapshot.ecommerce_dbt.customer_snapshot: Close
+[0m05:01:42.796481 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f16849-28a9-1ace-8cc4-e6cb557d59c0) - Closing
+[0m05:01:43.137504 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f27a1aa4-569d-48eb-a58e-e05fc0436100', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58E3EFB10>]}
+[0m05:01:43.139759 [info ] [Thread-7 (]: 1 of 1 OK snapshotted snapshots.customer_snapshot .............................. [[32mOK[0m in 19.93s]
+[0m05:01:43.141771 [debug] [Thread-7 (]: Finished running node snapshot.ecommerce_dbt.customer_snapshot
+[0m05:01:43.144640 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m05:01:43.145365 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m05:01:43.146470 [info ] [MainThread]: 
+[0m05:01:43.147501 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 1 minutes and 7.93 seconds (67.93s).
+[0m05:01:43.150398 [debug] [MainThread]: Command end result
+[0m05:01:43.324718 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Projects\DE\Projects\ecommerce_analytics_platform\target\manifest.json
+[0m05:01:43.330728 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Projects\DE\Projects\ecommerce_analytics_platform\target\semantic_manifest.json
+[0m05:01:43.348943 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Projects\DE\Projects\ecommerce_analytics_platform\target\run_results.json
+[0m05:01:43.349484 [info ] [MainThread]: 
+[0m05:01:43.350727 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m05:01:43.351912 [info ] [MainThread]: 
+[0m05:01:43.353242 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m05:01:43.354558 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- CustomKeyInObjectDeprecation: 2 occurrences
+- PropertyMovedToConfigDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m05:01:43.357350 [debug] [MainThread]: Command `dbt snapshot` succeeded at 05:01:43.356944 after 79.51 seconds
+[0m05:01:43.358613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58F03A7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58E403350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58EFDDBE0>]}
+[0m05:01:43.359846 [debug] [MainThread]: Flushing usage events
+[0m05:01:45.162494 [debug] [MainThread]: An error was encountered while trying to flush usage events

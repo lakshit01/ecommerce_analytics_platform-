@@ -1,42 +1,15 @@
-SELECT
+{{ config(
+    materialized = 'incremental',
+    unique_key = 'order_id',
+    incremental_strategy = 'merge'
+)}}
 
-    o.order_id,
+select
+    *
+from {{ref('int_orders_details')}}
 
-    c.customer_sk,
+{% if is_incremental() %}
 
-    p.product_sk,
+where order_date >= dateadd(day, -7, (select max(order_date) from {{ this }}))
 
-    o.customer_id,
-
-    o.product_id,
-
-    o.order_date,
-
-    o.quantity,
-
-    o.amount,
-
-    COALESCE(
-        r.total_return_amount,
-        0
-    ) AS return_amount,
-
-    o.amount -
-    COALESCE(
-        r.total_return_amount,
-        0
-    ) AS net_sales
-
-FROM {{ ref('int_orders_details') }} o
-
-LEFT JOIN {{ ref('dim_customer') }} c
-
-ON o.customer_id = c.customer_id
-
-LEFT JOIN {{ ref('dim_product') }} p
-
-ON o.product_id = p.product_id
-
-LEFT JOIN {{ ref('int_returns_summary') }} r
-
-ON o.order_id = r.order_id
+{% endif %}
