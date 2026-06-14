@@ -1,0 +1,13 @@
+version: 2
+
+models:
+
+  - name: fact_sales
+    description: Fact table containing sales data.
+
+    columns:
+      - name: order_id
+        description: Unique identifier for each order
+        tests:
+          - unique
+          - not_null
