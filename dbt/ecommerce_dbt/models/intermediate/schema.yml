@@ -1,0 +1,119 @@
+version: 2
+
+models:
+
+  - name: int_order_details
+    description: Combined customer, product and order information.
+
+    columns:
+      - name: order_id
+        description: Unique identifier for each order
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: Unique identifier for the customer who placed the order
+        tests:
+          - not_null
+
+      - name: product_id
+        description: Unique identifier for the product ordered
+        tests:
+          - not_null
+
+      - name: quantity
+        description: Number of units ordered
+        tests:
+          - not_null
+
+      - name: amount
+        description: Total amount for the order
+        tests:
+          - not_null
+
+      - name: order_date
+        description: Date when the order was placed
+        tests:
+          - not_null
+
+      - name: customer_first_name
+        description: First name of the customer who placed the order
+        tests:
+          - not_null
+
+      - name: customer_last_name
+        description: Last name of the customer who placed the order
+        tests:
+          - not_null
+
+      - name: city
+        description: City of the customer who placed the order
+        tests:
+          - not_null
+
+      - name: state
+        description: State of the customer who placed the order
+        tests:
+          - not_null
+      
+      - name: product_name
+        description: Name of the product ordered  
+        tests:
+          - not_null
+
+      - name: category
+        description: Category of the product ordered
+        tests:
+          - not_null
+
+      - name: unit_price
+        description: Price per unit of the product ordered
+        tests:
+          - not_null
+  
+
+  - name: int_customer_orders
+    description: Customer order metrics.
+
+    columns:
+      - name: customer_id
+        description: Unique identifier for each customer
+        tests:
+          - unique
+          - not_null
+
+      - name: total_orders
+        description: Total number of orders placed by the customer
+        tests:
+          - not_null
+
+      - name: total_amount
+        description: Total amount spent by the customer on orders
+        tests:
+          - not_null
+
+      - name: average_order_amount
+        description: Average amount spent per order by the customer
+        tests:
+          - not_null
+
+  - name: int_returns_summary
+    description: Return metrics aggregated by order.
+
+    columns:
+      - name: order_id
+        description: Unique identifier for each order
+        tests:
+          - unique
+          - not_null
+
+      - name: total_return_amount
+        description: Total amount refunded for returns associated with the order
+        tests:
+          - not_null
+
+      - name: total_returns
+        description: Total number of returns associated with the order
+        tests:
+          - not_null

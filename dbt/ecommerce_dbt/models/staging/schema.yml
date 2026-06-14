@@ -1,0 +1,149 @@
+version: 2
+
+models:
+
+  - name: stg_customers
+    description: Standardized customer data from Silver layer.
+
+    columns:
+      - name: customer_id
+        description: Unique customer identifier
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_first_name
+        description: Customer first name
+        tests:
+          - not_null
+
+      - name: customer_last_name
+        description: Customer last name  
+        tests:
+          - not_null
+
+      - name: email
+        description: Customer email address
+        tests:
+          - not_null
+
+      - name: city
+        description: Customer city
+        tests:
+          - not_null
+
+      - name: state
+        description: Customer state
+        tests:
+          - not_null
+
+      - name: signup_date
+        description: Date when the customer signed up
+        tests:
+          - not_null
+
+      - name: silver_processed_timestamp
+        description: Timestamp when the record was processed in the Silver layer
+
+  - name: stg_products
+    description: Standardized product data from Silver layer.
+
+    columns:
+      - name: product_id
+        description: Unique product identifier
+        tests:
+          - unique
+          - not_null
+
+      - name: product_name
+        description: Name of the product
+        tests:
+          - not_null
+
+      - name: category
+        description: Product category
+        tests:
+          - not_null
+
+      - name: unit_price
+        description: Price per unit of the product
+        tests:
+          - not_null
+
+      - name: silver_processed_timestamp
+        description: Timestamp when the record was processed in the Silver layer
+
+  - name: stg_orders
+    description: Standardized order data from Silver layer.
+
+    columns:
+      - name: order_id
+        description: Unique order identifier
+        tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: Identifier of the customer who placed the order
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+
+      - name: product_id
+        description: Identifier of the product ordered
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_products')
+              field: product_id
+
+      - name: quantity
+        description: Number of units ordered
+        tests:
+          - not_null
+
+      - name: amount
+        description: Total amount for the order
+        tests:
+          - not_null
+
+      - name: order_date
+        description: Date when the order was placed
+        tests:
+          - not_null
+
+      - name: silver_processed_timestamp
+        description: Timestamp when the record was processed in the Silver layer
+
+  - name: stg_returns
+    description: Standardized return data from Silver layer.
+
+    columns:
+      - name: return_id
+        description: Unique return identifier
+        tests:
+          - unique
+          - not_null
+      
+      - name: order_id
+        description: Identifier of the order being returned
+        tests:
+          - not_null  
+          - relationships:
+              to: ref('stg_orders')
+              field: order_id
+
+      - name: return_amount
+        description: Amount refunded for the return
+        tests:
+          - not_null
+
+      - name: return_date
+        description: Date when the return was processed
+        tests:
+          - not_null
+
+      - name: silver_processed_timestamp
+        description: Timestamp when the record was processed in the Silver layer
