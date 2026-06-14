@@ -1,0 +1,422 @@
+[0m02:56:17.498769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0FF5DE270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0FC327110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E081963B10>]}
+
+
+============================== 02:56:17.502809 | f131af16-4547-46b0-be32-d5586d564b61 ==============================
+[0m02:56:17.502809 [info ] [MainThread]: Running with dbt=1.11.11
+[0m02:56:17.503430 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\shiva\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt init ecommerce_dbt', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m02:56:17.519378 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\shiva\.dbt
+[0m02:56:17.522297 [debug] [MainThread]: Starter project path: D:\Projects\DE\Projects\ecommerce_analytics_platform\venv\Lib\site-packages\dbt\include\starter_project
+[0m02:56:17.557649 [info ] [MainThread]: 
+Your new dbt project "ecommerce_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m02:56:17.559529 [info ] [MainThread]: Setting up your profile.
+[0m02:56:54.000473 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m02:56:54.001366 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m02:56:54.001612 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m03:05:57.083812 [info ] [MainThread]: Profile ecommerce_dbt written to C:\Users\shiva\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m03:05:57.202503 [debug] [MainThread]: Command `dbt init` succeeded at 03:05:57.199373 after 579.81 seconds
+[0m03:05:57.209163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E081982C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E083A583B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09C3C7350>]}
+[0m03:05:57.218284 [debug] [MainThread]: Flushing usage events
+[0m03:05:59.016036 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:07:30.773523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E8920E270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E85F57110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E8B593B10>]}
+
+
+============================== 03:07:30.779543 | dc00ec6e-9d16-466f-bc30-7efa7fb3eae7 ==============================
+[0m03:07:30.779543 [info ] [MainThread]: Running with dbt=1.11.11
+[0m03:07:30.780112 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\shiva\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m03:07:30.811971 [info ] [MainThread]: dbt version: 1.11.11
+[0m03:07:30.812644 [info ] [MainThread]: python version: 3.13.7
+[0m03:07:30.812989 [info ] [MainThread]: python path: D:\Projects\DE\Projects\ecommerce_analytics_platform\venv\Scripts\python.exe
+[0m03:07:30.813300 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m03:07:31.805756 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m03:07:31.806105 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m03:07:31.806319 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m03:07:32.776940 [info ] [MainThread]: Using profiles dir at C:\Users\shiva\.dbt
+[0m03:07:32.777471 [info ] [MainThread]: Using profiles.yml file at C:\Users\shiva\.dbt\profiles.yml
+[0m03:07:32.777959 [info ] [MainThread]: Using dbt_project.yml file at D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml
+[0m03:07:32.778315 [info ] [MainThread]: adapter type: databricks
+[0m03:07:32.778654 [info ] [MainThread]: adapter version: 1.12.1
+[0m03:07:32.784841 [info ] [MainThread]: Configuration:
+[0m03:07:32.785475 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:07:32.785863 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m03:07:32.786193 [info ] [MainThread]: Required dependencies:
+[0m03:07:32.786532 [debug] [MainThread]: Executing "git --help"
+[0m03:07:32.866748 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:07:32.867572 [debug] [MainThread]: STDERR: "b''"
+[0m03:07:32.868086 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:07:32.868700 [info ] [MainThread]: Connection:
+[0m03:07:32.869155 [info ] [MainThread]:   host: https://dbc-b03c4854-4652.cloud.databricks.com/
+[0m03:07:32.869587 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/cc45145f355986e9
+[0m03:07:32.869958 [info ] [MainThread]:   catalog: ecommerce_analytics_platform
+[0m03:07:32.870321 [info ] [MainThread]:   schema: analytics
+[0m03:07:32.870840 [info ] [MainThread]: Registered adapter: databricks=1.12.1
+[0m03:07:33.374769 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m03:07:33.375110 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m03:07:42.315677 [info ] [MainThread]: Databricks adapter: SPOG discovery probe to 'https://https://dbc-b03c4854-4652.cloud.databricks.com//.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //dbc-b03c4854-4652.cloud.databricks.com//.well-known/databricks-config (Caused by NameResolutionError("HTTPSConnection(host='https', port=443): Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))). Proceeding as a non-SPOG host. If https://dbc-b03c4854-4652.cloud.databricks.com/ is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m03:07:42.350796 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type=None): no
+[0m03:07:42.351355 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m03:07:42.351719 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.2.6 (supported)
+[0m03:07:42.352050 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.104.0 (supported)
+[0m03:07:42.352391 [debug] [MainThread]: Using databricks connection "debug"
+[0m03:07:42.353100 [debug] [MainThread]: On debug: select 1 as id
+[0m03:07:42.353331 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:07:45.496170 [error] [MainThread]: databricks-sql-connector adapter: ThriftBackend.attempt_request: Exception: %s
+[0m03:07:45.530983 [error] [MainThread]: Databricks adapter: Connection(session-id=Unknown) - Exception while trying to create connection: Error during request to server: : Invalid access token.. 
+Error properties: attempt=1/30, bounded-retry-delay=None, elapsed-seconds=1.4156057834625244/900.0, error-message=: Invalid access token., http-code=403, method=OpenSession, no-retry-reason=non-retryable error, original-exception=, query-id=None, session-id=None
+[0m03:07:45.535409 [debug] [MainThread]: Databricks adapter: Exception while trying to execute query
+select 1 as id
+: Database Error
+  Error during request to server: : Invalid access token.. 
+[0m03:07:45.536054 [debug] [MainThread]: On debug: No close available on handle
+[0m03:07:45.536398 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m03:07:45.537085 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m03:07:45.537490 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml> not found
+
+[0m03:07:45.538258 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Database Error
+    Error during request to server: : Invalid access token.. 
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m03:07:45.540471 [debug] [MainThread]: Command `dbt debug` failed at 03:07:45.540117 after 14.97 seconds
+[0m03:07:45.541034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EA5F4A780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EA5F32C30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027EA5EF7DF0>]}
+[0m03:07:45.541452 [debug] [MainThread]: Flushing usage events
+[0m03:07:47.121164 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:12:09.001406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF2A0FE270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF26E87110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF2C483B10>]}
+
+
+============================== 03:12:09.012569 | 2ea6d980-c703-47f0-8e3f-629394c82af3 ==============================
+[0m03:12:09.012569 [info ] [MainThread]: Running with dbt=1.11.11
+[0m03:12:09.016725 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'D:\\Projects\\DE\\Projects\\ecommerce_analytics_platform\\dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m03:12:09.051896 [info ] [MainThread]: dbt version: 1.11.11
+[0m03:12:09.052573 [info ] [MainThread]: python version: 3.13.7
+[0m03:12:09.053048 [info ] [MainThread]: python path: D:\Projects\DE\Projects\ecommerce_analytics_platform\venv\Scripts\python.exe
+[0m03:12:09.053538 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m03:12:10.521270 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m03:12:10.522345 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m03:12:10.522592 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m03:12:11.452686 [info ] [MainThread]: Using profiles dir at D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt
+[0m03:12:11.453274 [info ] [MainThread]: Using profiles.yml file at D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\profiles.yml
+[0m03:12:11.453712 [info ] [MainThread]: Using dbt_project.yml file at D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml
+[0m03:12:11.454113 [info ] [MainThread]: Configuration:
+[0m03:12:11.454486 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m03:12:11.454858 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m03:12:11.455194 [info ] [MainThread]: Required dependencies:
+[0m03:12:11.455562 [debug] [MainThread]: Executing "git --help"
+[0m03:12:11.504369 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:12:11.505006 [debug] [MainThread]: STDERR: "b''"
+[0m03:12:11.505367 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:12:11.505743 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m03:12:11.506173 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m03:12:11.506566 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "ecommerce_dbt", target "dev" invalid: Runtime Error
+    The schema should not contain '.': ecommerce_analytics_platform.analytics
+    If you are trying to set a catalog, please use `catalog` instead.
+    
+
+
+[0m03:12:11.506920 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml> not found
+
+[0m03:12:11.507690 [debug] [MainThread]: Command `dbt debug` failed at 03:12:11.507597 after 2.78 seconds
+[0m03:12:11.507952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF46DFA190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF2E4130B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF46DA7350>]}
+[0m03:12:11.508288 [debug] [MainThread]: Flushing usage events
+[0m03:12:13.470882 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:12:50.836203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002055E6A2270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002055B3B7110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020560A33B10>]}
+
+
+============================== 03:12:50.840488 | a5502b4d-727d-411f-b9d7-c1368b19ed0e ==============================
+[0m03:12:50.840488 [info ] [MainThread]: Running with dbt=1.11.11
+[0m03:12:50.841126 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'D:\\Projects\\DE\\Projects\\ecommerce_analytics_platform\\dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m03:12:50.863993 [info ] [MainThread]: dbt version: 1.11.11
+[0m03:12:50.864592 [info ] [MainThread]: python version: 3.13.7
+[0m03:12:50.864997 [info ] [MainThread]: python path: D:\Projects\DE\Projects\ecommerce_analytics_platform\venv\Scripts\python.exe
+[0m03:12:50.865395 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m03:12:51.692213 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m03:12:51.692584 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m03:12:51.692843 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m03:12:52.304614 [info ] [MainThread]: Using profiles dir at D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt
+[0m03:12:52.305155 [info ] [MainThread]: Using profiles.yml file at D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\profiles.yml
+[0m03:12:52.305632 [info ] [MainThread]: Using dbt_project.yml file at D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml
+[0m03:12:52.305993 [info ] [MainThread]: adapter type: databricks
+[0m03:12:52.306284 [info ] [MainThread]: adapter version: 1.12.1
+[0m03:12:52.306700 [info ] [MainThread]: Configuration:
+[0m03:12:52.307040 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:12:52.307357 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m03:12:52.307665 [info ] [MainThread]: Required dependencies:
+[0m03:12:52.308026 [debug] [MainThread]: Executing "git --help"
+[0m03:12:52.366733 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:12:52.367133 [debug] [MainThread]: STDERR: "b''"
+[0m03:12:52.367477 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:12:52.367862 [info ] [MainThread]: Connection:
+[0m03:12:52.368294 [info ] [MainThread]:   host: https://dbc-b03c4854-4652.cloud.databricks.com
+[0m03:12:52.368635 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/cc45145f355986e9
+[0m03:12:52.368969 [info ] [MainThread]:   catalog: ecommerce_analytics_platform
+[0m03:12:52.369280 [info ] [MainThread]:   schema: analytics
+[0m03:12:52.369746 [info ] [MainThread]: Registered adapter: databricks=1.12.1
+[0m03:12:52.619513 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m03:12:52.619808 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m03:13:01.517807 [info ] [MainThread]: Databricks adapter: SPOG discovery probe to 'https://https://dbc-b03c4854-4652.cloud.databricks.com/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //dbc-b03c4854-4652.cloud.databricks.com/.well-known/databricks-config (Caused by NameResolutionError("HTTPSConnection(host='https', port=443): Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))). Proceeding as a non-SPOG host. If https://dbc-b03c4854-4652.cloud.databricks.com is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m03:13:01.532569 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type=None): no
+[0m03:13:01.535491 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m03:13:01.536849 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.2.6 (supported)
+[0m03:13:01.538001 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.104.0 (supported)
+[0m03:13:01.539189 [debug] [MainThread]: Using databricks connection "debug"
+[0m03:13:01.540458 [debug] [MainThread]: On debug: select 1 as id
+[0m03:13:01.541145 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:13:04.670163 [error] [MainThread]: databricks-sql-connector adapter: ThriftBackend.attempt_request: Exception: %s
+[0m03:13:04.714332 [error] [MainThread]: Databricks adapter: Connection(session-id=Unknown) - Exception while trying to create connection: Error during request to server: : Provided access token does not have required scopes: sql. 
+Error properties: attempt=1/30, bounded-retry-delay=None, elapsed-seconds=1.4822983741760254/900.0, error-message=: Provided access token does not have required scopes: sql, http-code=403, method=OpenSession, no-retry-reason=non-retryable error, original-exception=, query-id=None, session-id=None
+[0m03:13:04.714988 [debug] [MainThread]: Databricks adapter: Exception while trying to execute query
+select 1 as id
+: Database Error
+  Error during request to server: : Provided access token does not have required scopes: sql. 
+[0m03:13:04.715359 [debug] [MainThread]: On debug: No close available on handle
+[0m03:13:04.715575 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m03:13:04.715979 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m03:13:04.716303 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml> not found
+
+[0m03:13:04.716597 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Database Error
+    Error during request to server: : Provided access token does not have required scopes: sql. 
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m03:13:04.717230 [debug] [MainThread]: Command `dbt debug` failed at 03:13:04.717131 after 14.14 seconds
+[0m03:13:04.717553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002057B33A780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002057B31EC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002057B2CFDF0>]}
+[0m03:13:04.717831 [debug] [MainThread]: Flushing usage events
+[0m03:13:06.206562 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:19:21.024687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241CEB1A270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241CB857110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241CFED3B10>]}
+
+
+============================== 03:19:21.035780 | 8292cda6-84a9-4856-88a4-7f22c23c6eed ==============================
+[0m03:19:21.035780 [info ] [MainThread]: Running with dbt=1.11.11
+[0m03:19:21.036802 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\shiva\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m03:19:21.067019 [info ] [MainThread]: dbt version: 1.11.11
+[0m03:19:21.067630 [info ] [MainThread]: python version: 3.13.7
+[0m03:19:21.068078 [info ] [MainThread]: python path: D:\Projects\DE\Projects\ecommerce_analytics_platform\venv\Scripts\python.exe
+[0m03:19:21.068470 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m03:19:22.160881 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m03:19:22.161935 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m03:19:22.162262 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m03:19:23.160930 [info ] [MainThread]: Using profiles dir at C:\Users\shiva\.dbt
+[0m03:19:23.161477 [info ] [MainThread]: Using profiles.yml file at C:\Users\shiva\.dbt\profiles.yml
+[0m03:19:23.161919 [info ] [MainThread]: Using dbt_project.yml file at D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml
+[0m03:19:23.162247 [info ] [MainThread]: adapter type: databricks
+[0m03:19:23.162772 [info ] [MainThread]: adapter version: 1.12.1
+[0m03:19:23.163147 [info ] [MainThread]: Configuration:
+[0m03:19:23.163509 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:19:23.163844 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m03:19:23.164196 [info ] [MainThread]: Required dependencies:
+[0m03:19:23.164563 [debug] [MainThread]: Executing "git --help"
+[0m03:19:23.220311 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:19:23.220777 [debug] [MainThread]: STDERR: "b''"
+[0m03:19:23.221093 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:19:23.221428 [info ] [MainThread]: Connection:
+[0m03:19:23.221923 [info ] [MainThread]:   host: https://dbc-b03c4854-4652.cloud.databricks.com
+[0m03:19:23.222270 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/cc45145f355986e9
+[0m03:19:23.222581 [info ] [MainThread]:   catalog: ecommerce_analytics_platform
+[0m03:19:23.222910 [info ] [MainThread]:   schema: analytics
+[0m03:19:23.223379 [info ] [MainThread]: Registered adapter: databricks=1.12.1
+[0m03:19:23.612595 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m03:19:23.612892 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m03:19:32.676763 [info ] [MainThread]: Databricks adapter: SPOG discovery probe to 'https://https://dbc-b03c4854-4652.cloud.databricks.com/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //dbc-b03c4854-4652.cloud.databricks.com/.well-known/databricks-config (Caused by NameResolutionError("HTTPSConnection(host='https', port=443): Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))). Proceeding as a non-SPOG host. If https://dbc-b03c4854-4652.cloud.databricks.com is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m03:19:32.683543 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type=None): no
+[0m03:19:32.684241 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m03:19:32.685036 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.2.6 (supported)
+[0m03:19:32.685703 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.104.0 (supported)
+[0m03:19:32.686157 [debug] [MainThread]: Using databricks connection "debug"
+[0m03:19:32.686976 [debug] [MainThread]: On debug: select 1 as id
+[0m03:19:32.687542 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:19:35.639971 [error] [MainThread]: databricks-sql-connector adapter: ThriftBackend.attempt_request: Exception: %s
+[0m03:19:35.776226 [error] [MainThread]: Databricks adapter: Connection(session-id=Unknown) - Exception while trying to create connection: Error during request to server: : Provided access token does not have required scopes: sql. 
+Error properties: attempt=1/30, bounded-retry-delay=None, elapsed-seconds=1.422313928604126/900.0, error-message=: Provided access token does not have required scopes: sql, http-code=403, method=OpenSession, no-retry-reason=non-retryable error, original-exception=, query-id=None, session-id=None
+[0m03:19:35.777090 [debug] [MainThread]: Databricks adapter: Exception while trying to execute query
+select 1 as id
+: Database Error
+  Error during request to server: : Provided access token does not have required scopes: sql. 
+[0m03:19:35.777575 [debug] [MainThread]: On debug: No close available on handle
+[0m03:19:35.777963 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m03:19:35.778954 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m03:19:35.780607 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml> not found
+
+[0m03:19:35.781155 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Database Error
+    Error during request to server: : Provided access token does not have required scopes: sql. 
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m03:19:35.781982 [debug] [MainThread]: Command `dbt debug` failed at 03:19:35.781841 after 15.19 seconds
+[0m03:19:35.782317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241EB7BA780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241EB79EC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000241EB767DF0>]}
+[0m03:19:35.782621 [debug] [MainThread]: Flushing usage events
+[0m03:19:37.379984 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:20:36.263149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219754EE270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021972277110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021977883B10>]}
+
+
+============================== 03:20:36.266600 | b13e1ee9-00da-4f55-bb85-23f90f77e969 ==============================
+[0m03:20:36.266600 [info ] [MainThread]: Running with dbt=1.11.11
+[0m03:20:36.267148 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\shiva\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m03:20:36.281405 [info ] [MainThread]: dbt version: 1.11.11
+[0m03:20:36.281791 [info ] [MainThread]: python version: 3.13.7
+[0m03:20:36.282465 [info ] [MainThread]: python path: D:\Projects\DE\Projects\ecommerce_analytics_platform\venv\Scripts\python.exe
+[0m03:20:36.283393 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m03:20:37.179427 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m03:20:37.179869 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m03:20:37.180096 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m03:20:37.771700 [info ] [MainThread]: Using profiles dir at C:\Users\shiva\.dbt
+[0m03:20:37.772309 [info ] [MainThread]: Using profiles.yml file at C:\Users\shiva\.dbt\profiles.yml
+[0m03:20:37.772735 [info ] [MainThread]: Using dbt_project.yml file at D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml
+[0m03:20:37.773099 [info ] [MainThread]: adapter type: databricks
+[0m03:20:37.773465 [info ] [MainThread]: adapter version: 1.12.1
+[0m03:20:37.773860 [info ] [MainThread]: Configuration:
+[0m03:20:37.774207 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m03:20:37.774579 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m03:20:37.774932 [info ] [MainThread]: Required dependencies:
+[0m03:20:37.775301 [debug] [MainThread]: Executing "git --help"
+[0m03:20:37.823914 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m03:20:37.824248 [debug] [MainThread]: STDERR: "b''"
+[0m03:20:37.824522 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m03:20:37.824923 [info ] [MainThread]: Connection:
+[0m03:20:37.825401 [info ] [MainThread]:   host: https://dbc-b03c4854-4652.cloud.databricks.com
+[0m03:20:37.826086 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/cc45145f355986e9
+[0m03:20:37.826456 [info ] [MainThread]:   catalog: ecommerce_analytics_platform
+[0m03:20:37.826845 [info ] [MainThread]:   schema: analytics
+[0m03:20:37.827379 [info ] [MainThread]: Registered adapter: databricks=1.12.1
+[0m03:20:38.061487 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m03:20:38.061773 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m03:20:46.871814 [info ] [MainThread]: Databricks adapter: SPOG discovery probe to 'https://https://dbc-b03c4854-4652.cloud.databricks.com/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //dbc-b03c4854-4652.cloud.databricks.com/.well-known/databricks-config (Caused by NameResolutionError("HTTPSConnection(host='https', port=443): Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))). Proceeding as a non-SPOG host. If https://dbc-b03c4854-4652.cloud.databricks.com is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m03:20:46.880261 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type=None): no
+[0m03:20:46.881562 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m03:20:46.889955 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.2.6 (supported)
+[0m03:20:46.890891 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.104.0 (supported)
+[0m03:20:46.891739 [debug] [MainThread]: Using databricks connection "debug"
+[0m03:20:46.892326 [debug] [MainThread]: On debug: select 1 as id
+[0m03:20:46.892848 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m03:20:49.780526 [error] [MainThread]: databricks-sql-connector adapter: ThriftBackend.attempt_request: Exception: %s
+[0m03:20:49.819176 [error] [MainThread]: Databricks adapter: Connection(session-id=Unknown) - Exception while trying to create connection: Error during request to server: : Provided access token does not have required scopes: sql. 
+Error properties: attempt=1/30, bounded-retry-delay=None, elapsed-seconds=1.306697130203247/900.0, error-message=: Provided access token does not have required scopes: sql, http-code=403, method=OpenSession, no-retry-reason=non-retryable error, original-exception=, query-id=None, session-id=None
+[0m03:20:49.819872 [debug] [MainThread]: Databricks adapter: Exception while trying to execute query
+select 1 as id
+: Database Error
+  Error during request to server: : Provided access token does not have required scopes: sql. 
+[0m03:20:49.820240 [debug] [MainThread]: On debug: No close available on handle
+[0m03:20:49.820460 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m03:20:49.820846 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m03:20:49.821197 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml> not found
+
+[0m03:20:49.821510 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Database Error
+    Error during request to server: : Provided access token does not have required scopes: sql. 
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m03:20:49.822183 [debug] [MainThread]: Command `dbt debug` failed at 03:20:49.822080 after 13.69 seconds
+[0m03:20:49.822471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002191223A780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002191221EC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219121E7DF0>]}
+[0m03:20:49.822752 [debug] [MainThread]: Flushing usage events
+[0m03:20:51.415948 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:07:51.654373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B07902270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B045E7110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B08CC3B10>]}
+
+
+============================== 04:07:51.661697 | 3e89f2b5-a09b-4c7a-a2de-9327205f2013 ==============================
+[0m04:07:51.661697 [info ] [MainThread]: Running with dbt=1.11.11
+[0m04:07:51.662523 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\shiva\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m04:07:51.698010 [info ] [MainThread]: dbt version: 1.11.11
+[0m04:07:51.698549 [info ] [MainThread]: python version: 3.13.7
+[0m04:07:51.698985 [info ] [MainThread]: python path: D:\Projects\DE\Projects\ecommerce_analytics_platform\venv\Scripts\python.exe
+[0m04:07:51.699467 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m04:07:52.869732 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m04:07:52.870242 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m04:07:52.870626 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m04:07:54.096210 [info ] [MainThread]: Using profiles dir at C:\Users\shiva\.dbt
+[0m04:07:54.096817 [info ] [MainThread]: Using profiles.yml file at C:\Users\shiva\.dbt\profiles.yml
+[0m04:07:54.097376 [info ] [MainThread]: Using dbt_project.yml file at D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml
+[0m04:07:54.097831 [info ] [MainThread]: adapter type: databricks
+[0m04:07:54.098320 [info ] [MainThread]: adapter version: 1.12.1
+[0m04:07:54.098789 [info ] [MainThread]: Configuration:
+[0m04:07:54.099350 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m04:07:54.099776 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m04:07:54.100169 [info ] [MainThread]: Required dependencies:
+[0m04:07:54.100635 [debug] [MainThread]: Executing "git --help"
+[0m04:07:54.173110 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m04:07:54.173961 [debug] [MainThread]: STDERR: "b''"
+[0m04:07:54.174458 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m04:07:54.174934 [info ] [MainThread]: Connection:
+[0m04:07:54.175385 [info ] [MainThread]:   host: https://dbc-b03c4854-4652.cloud.databricks.com
+[0m04:07:54.175870 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/cc45145f355986e9
+[0m04:07:54.176400 [info ] [MainThread]:   catalog: ecommerce_analytics_platform
+[0m04:07:54.176867 [info ] [MainThread]:   schema: analytics
+[0m04:07:54.177531 [info ] [MainThread]: Registered adapter: databricks=1.12.1
+[0m04:07:54.723193 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m04:07:54.723646 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m04:08:03.709108 [info ] [MainThread]: Databricks adapter: SPOG discovery probe to 'https://https://dbc-b03c4854-4652.cloud.databricks.com/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //dbc-b03c4854-4652.cloud.databricks.com/.well-known/databricks-config (Caused by NameResolutionError("HTTPSConnection(host='https', port=443): Failed to resolve 'https' ([Errno 11001] getaddrinfo failed)"))). Proceeding as a non-SPOG host. If https://dbc-b03c4854-4652.cloud.databricks.com is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m04:08:03.714317 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type=None): no
+[0m04:08:03.716182 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m04:08:03.719260 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.2.6 (supported)
+[0m04:08:03.720360 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.104.0 (supported)
+[0m04:08:03.721048 [debug] [MainThread]: Using databricks connection "debug"
+[0m04:08:03.721807 [debug] [MainThread]: On debug: select 1 as id
+[0m04:08:03.722200 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:08:07.855838 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f16778-8bbc-1b3e-bcac-c458621ce442) - Created
+[0m04:08:18.803678 [debug] [MainThread]: SQL status: OK in 15.080 seconds
+[0m04:08:18.804772 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f16778-8bbc-1b3e-bcac-c458621ce442, command-id=01f16778-8cb2-1990-853d-bf8d8b0838fd) - Closing
+[0m04:08:19.276124 [debug] [MainThread]: On debug: Close
+[0m04:08:19.276828 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f16778-8bbc-1b3e-bcac-c458621ce442) - Closing
+[0m04:08:19.650467 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m04:08:19.651542 [info ] [MainThread]: [31m1 check failed:[0m
+[0m04:08:19.653003 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Projects\DE\Projects\ecommerce_analytics_platform\dbt\dbt_project.yml> not found
+
+[0m04:08:19.654744 [debug] [MainThread]: Command `dbt debug` failed at 04:08:19.654513 after 28.24 seconds
+[0m04:08:19.655609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B245BA9E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B2459EC30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B24567680>]}
+[0m04:08:19.656648 [debug] [MainThread]: Flushing usage events
+[0m04:08:21.360085 [debug] [MainThread]: An error was encountered while trying to flush usage events
