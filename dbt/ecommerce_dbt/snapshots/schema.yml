@@ -1,0 +1,12 @@
+version: 2
+
+models:
+
+  - name: customer_snapshot
+    description: Snapshot of customer data for tracking historical changes.
+
+    columns:
+      - name: customer_id
+        description: Unique identifier for the customer
+        tests:
+          - not_null

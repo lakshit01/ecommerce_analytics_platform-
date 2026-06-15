@@ -28,3 +28,13 @@ models:
         relationships:
           - to: ref('stg_products')
             field: product_id
+
+
+  - name: dim_customer_history
+    description: Snapshot of customer data for tracking historical changes.
+
+    columns:
+      - name: customer_id
+        description: Unique identifier for the customer
+        tests:
+          - not_null
